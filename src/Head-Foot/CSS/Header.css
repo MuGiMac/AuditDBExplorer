@@ -1,0 +1,35 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #15325f;
+    color: white;
+    z-index: 1000; 
+  }
+  .main-content {
+    padding-top: 60px;
+  }
+  .logo img {
+    height: inherit; 
+    width: 30px;
+  }
+  .header img {
+    height: 30px;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  .nav-links a:hover {
+    text-decoration: underline;
+  }  

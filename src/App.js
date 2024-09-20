@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
+import Footer from './Head-Foot/Footer';
+import Header from './Head-Foot/Header';
 
 const AuditDBExplorer = () => {
   const [startTime, setStartTime] = useState('');
@@ -38,6 +40,7 @@ const AuditDBExplorer = () => {
 
   return (
       <div className="content">
+        <Header/>
           <form onSubmit={handleSubmit}>
               <div className="container">
                   <div className="field">
@@ -167,6 +170,7 @@ const AuditDBExplorer = () => {
                   <button type="button" onClick={() => {}}>Cancel</button>
               </div>
           </form>
+          <Footer/>
       </div>
   );
 };
