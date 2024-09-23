@@ -13,16 +13,26 @@ html, body {
 }
 body {
   display: grid;
-  place-items: center;
-  background: #60a1f0;
+  place-items: right;
+  /*background: #ffffff;*/
+  background-image: url('./icons/bg1 - Copy.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
   text-align: center;
 }
-.content {
-  width: 500px;
-  padding: 40px 30px;
+.content1 {
+  width: 520px;
+  height: 550px;
+  padding: 90px 40px;
   background: #f0f6fe;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: -3px -3px 7px #ad8a8a73, 2px 2px 5px rgba(146, 146, 153, 0.954);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
 }
 .container {
   display: flex;

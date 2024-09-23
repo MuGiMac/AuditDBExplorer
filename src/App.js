@@ -37,11 +37,11 @@ const AuditDBExplorer = () => {
           sources,
       });
   };
-
   return (
       <div className="content">
         <Header/>
           <form onSubmit={handleSubmit}>
+            <div className='content1'>
               <div className="container">
                   <div className="field">
                       <label htmlFor="start-time">Start Date</label>
@@ -169,6 +169,7 @@ const AuditDBExplorer = () => {
                   <button type="submit" style={{ marginRight: '40px' }}>Submit</button>
                   <button type="button" onClick={() => {}}>Cancel</button>
               </div>
+            </div>
           </form>
           <Footer/>
       </div>
