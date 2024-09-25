@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './App.css';
 import Footer from './Head-Foot/Footer';
 import Header from './Head-Foot/Header';
 
 const AuditDBExplorer = () => {
+  const navigate = useNavigate();
   const [startTime, setStartTime] = useState('');
   const [endTime, setEndTime] = useState('');
   const [user, setUser] = useState('*');
@@ -21,7 +23,13 @@ const AuditDBExplorer = () => {
   const handleSourceChange = (e) => {
       setSources({ ...sources, [e.target.name]: e.target.checked });
   };
-
+  useEffect(() => {
+    const isLoggedIn = sessionStorage.getItem('isLoggedIn') === 'true';
+    if (!isLoggedIn) {
+        window.location.reload();
+        navigate('/');
+    }
+  }, [navigate]);
   const handleSubmit = (e) => {
       e.preventDefault();
       console.log({
@@ -37,6 +45,7 @@ const AuditDBExplorer = () => {
           sources,
       });
   };
+  
   return (
       <div className="content">
         <Header/>
@@ -167,7 +176,26 @@ const AuditDBExplorer = () => {
               </div>
               <div>
                   <button type="submit" style={{ marginRight: '40px' }}>Submit</button>
-                  <button type="button" onClick={() => {}}>Cancel</button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                        setStartTime('');
+                        setEndTime('');
+                        setUser('*');
+                        setUserIP('*');
+                        setOnEntry('*');
+                        setAttributes('*');
+                        setOperation('*');
+                        setResult('');
+                        setMaxRows('10');
+                        setSources({
+                            ldapAudit: true,
+                            identityAudit: true,
+                        });
+                    }}
+                  >
+                 Cancel
+                </button>
               </div>
             </div>
           </form>
