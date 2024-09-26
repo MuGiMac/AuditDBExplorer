@@ -26,8 +26,12 @@ const AuditDBExplorer = () => {
   useEffect(() => {
     const isLoggedIn = sessionStorage.getItem('isLoggedIn') === 'true';
     if (!isLoggedIn) {
-        window.location.reload();
-        navigate('/');
+      navigate('/');
+    } else {
+      window.history.pushState(null, null, window.location.href);
+      window.onpopstate = () => {
+        window.history.pushState(null, null, window.location.href);
+      };
     }
   }, [navigate]);
   const handleSubmit = (e) => {

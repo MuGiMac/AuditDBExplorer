@@ -8,7 +8,7 @@ const Header = () => {
 
   const handleLogout = () => {
     sessionStorage.removeItem('isLoggedIn');
-    window.location.reload();
+    //window.location.reload();
     navigate('/');
   };
 
