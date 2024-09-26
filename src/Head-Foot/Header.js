@@ -14,13 +14,13 @@ const Header = () => {
 
   return (
     <header className="header">
-      <a href='http://localhost:3000/'>
+      <a href='http://localhost:3000/app'>
         <img src={logo} alt="Logo" />
       </a>
       <nav>
         <ul className="nav-links">
-          <li><a href="http://localhost:3000/">Home</a></li>
-          <li><a href="http://localhost:3000/">My Info</a></li>
+          <li><a href="http://localhost:3000/app">Home</a></li>
+          <li><a href="http://localhost:3000/app">My Info</a></li>
           <li><span className="logout" onClick={handleLogout}>Logout</span></li>
         </ul>
       </nav>
