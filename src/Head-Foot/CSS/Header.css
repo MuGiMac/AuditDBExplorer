@@ -1,0 +1,47 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #15325f;
+  color: white;
+  z-index: 1000; 
+}
+
+.header img {
+  height: 35px;
+  width: auto;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  font-size: 11px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.logout {
+  cursor: pointer;
+  color: white;
+  transition: text-decoration 0.3s;
+  margin-right: 7px;
+}
+
+.logout:hover {
+  text-decoration: underline;
+}
