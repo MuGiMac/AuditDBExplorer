@@ -20,7 +20,7 @@ const Header = () => {
       <nav>
         <ul className="nav-links">
           <li><a href="http://localhost:3000/app">Home</a></li>
-          <li><a href="http://localhost:3000/app">My Info</a></li>
+          <li><span className="myinfo" onClick={() => navigate('/myinfo')}>My Info</span></li>
           <li><span className="logout" onClick={handleLogout}>Logout</span></li>
         </ul>
       </nav>
