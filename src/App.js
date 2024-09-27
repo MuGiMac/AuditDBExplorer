@@ -34,6 +34,7 @@ const AuditDBExplorer = () => {
       };
     }
   }, [navigate]);
+  
   const handleSubmit = (e) => {
       e.preventDefault();
       console.log({

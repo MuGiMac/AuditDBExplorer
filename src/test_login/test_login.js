@@ -9,12 +9,12 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username === "mugi" && password === "1234") {
+    if (username === "mugi037" && password === "1234") {
       alert('Login successful!');
       sessionStorage.setItem('isLoggedIn', 'true');
       navigate('/app');
     } else {
-      alert('Invalid !! Please try with "mugi", "1234".');
+      alert('Invalid !! Please try with "mugi037", "1234".');
       setUsername('');
       setPassword('');
     }
