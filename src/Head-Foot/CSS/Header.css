@@ -35,24 +35,13 @@
   text-decoration: underline;
 }
 
-.logout{
+.nav-next {
   cursor: pointer;
   color: white;
   transition: text-decoration 0.3s;
   margin-right: 7px;
 }
 
-.logout:hover {
-  text-decoration: underline;
-}
-
-.myinfo {
-  cursor: pointer;
-  color: white;
-  transition: text-decoration 0.3s;
-  margin-right: 7px;
-}
-
-.myinfo:hover {
+.nav-next:hover {
   text-decoration: underline;
 }

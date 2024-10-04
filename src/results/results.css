@@ -1,10 +1,10 @@
-.my-info {
+.results {
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
 }
 
-.panel-panel-primary {
+.panel-top1 {
     /*flex-grow: 1;
     margin-bottom: 70px;*/ /*for full size*/
     margin-left: 30px;
@@ -17,17 +17,25 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.panel-heading {
+.panel-heading1 {
     background-color: #1c3d6e; 
     color: white;
-    padding-top: 10px; 
+    padding-top: 10px;
 }
 
-.panel-body {
+.panel-heading1 h4 {
+    margin-left: 5px;
+}
+
+.panel-body1 {
     padding-top: 20px; 
 }
 
-.list-group-item {
+.list-group-item1 {
     display: flex;
     justify-content: space-between;
+}
+
+.list-text1 {
+    margin-left: 5px;
 }

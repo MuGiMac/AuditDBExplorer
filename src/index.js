@@ -6,7 +6,8 @@ import App from './App';
 import TestLogin from './test_login/test_login';
 import PrivateRoute from './PrivateRoute'; 
 import reportWebVitals from './reportWebVitals';
-import MyInfo from './myinfo';
+import MyInfo from './myinfo/myinfo';
+import Results from './results/results';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Route path="/" element={<TestLogin />} />
         <Route path="/app" element={<PrivateRoute><App /></PrivateRoute>} />
         <Route path="/myinfo" element={<MyInfo />} />
+        <Route path="/results" element={<Results />}/>
       </Routes>
     </Router>
   </React.StrictMode>
