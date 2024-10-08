@@ -1,41 +1,67 @@
-.results {
+.panel-top1 {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
-}
-
-.panel-top1 {
-    /*flex-grow: 1;
-    margin-bottom: 70px;*/ /*for full size*/
-    margin-left: 30px;
-    margin-top: 80px;
-    margin-right: 30px;
+    margin-left: 20px;
+    margin-top: 70px;
+    margin-right: 20px;
     padding: 20px;
     background-color: white;
-    border: 1.5px solid #1c3d6e; 
-    border-radius: 8px; 
+    border: 1.5px solid #1c3d6e;
+    border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .panel-heading1 {
-    background-color: #1c3d6e; 
+    background-color: #1c3d6e;
     color: white;
     padding-top: 10px;
 }
 
 .panel-heading1 h4 {
-    margin-left: 5px;
+    margin: 0;
 }
 
 .panel-body1 {
-    padding-top: 20px; 
+    padding-top: 20px;
 }
 
-.list-group-item1 {
-    display: flex;
-    justify-content: space-between;
+.table-container {
+    max-height: 400px; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
 }
 
-.list-text1 {
-    margin-left: 5px;
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    table-layout: auto; /* Allows the table to adjust based on content */
+}
+
+.results-table th,
+.results-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.results-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.results-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.results-table  {
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Hides overflow text */
+    text-overflow: ellipsis; /* Adds ellipsis for overflow text */
+    max-width: auto; /* Set a maximum width as needed */
+}
+
+.results-table th,
+.results-table td {
+    min-width: auto; /* Set a minimum width for columns */
 }
